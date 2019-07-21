@@ -1,5 +1,5 @@
 .hero{
-
+ margin-top: 40px;
 }
 
 body{
@@ -7,5 +7,25 @@ body{
 }
 
 h1{
-  font-family: ;
+  color: white;
+  text-align: center;
+}
+
+ h2{
+   color: white;
+ }
+
+ .nextup{
+   margin-top: 40px;
+ }
+ img{
+
+   align-items: baseline;
+ }
+.foot{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-image: linear-gradient(black, gray);
 }
