@@ -15,17 +15,39 @@ h1{
    color: white;
  }
 
+ h3{
+   color: white;
+ }
+
  .nextup{
    margin-top: 40px;
  }
- img{
 
-   align-items: baseline;
+ .navbar{
+  border-top: solid 5px #19ace3;
+  border-bottom: solid 5px #19ace3;
  }
+
+ .about{
+    margin-top: 40px;
+ }
+
 .foot{
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-image: linear-gradient(black, gray);
-}
+  }
+
+ a{
+   color: white;
+ }
+
+ a:hover {
+   color: #fbd904;
+ }
+
+ p{
+   color: white;
+ }
