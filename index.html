@@ -31,7 +31,10 @@
             <a class="nav-link" href="wos.html">Wheels of Steel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <Span>
+              <button id="go-btn" class="btn btn-primary btn-theme-green" type="button" data-toggle="modal"
+              data-target="#smallModal">Contact</button>
+            </span>
           </li>
         </ul>
       </div>
@@ -83,13 +86,56 @@
         <a href="https://www.facebook.com/PittsburghEastRollerVillains/" target="_blank">Facebook</a>
       </span>
       <Span>
-        <a href="#">Contact</a>
-        <!--moddle pop up to send email with a from  -->
+        <button id="go-btn" class="btn btn-primary btn-theme-green" type="button" data-toggle="modal"
+        data-target="#smallModal">Contact</button>
       </span>
       <span>
         <a href="index.html">Home</a>
       </span>
     </div>
+
+
+<!-- contact modal -->
+
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="smallModalsmall">Request a quote</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form id="smallForm">
+
+              <div class="form-group">
+                <label for="inputzipcode">Name</label>
+                <input type="text" class="form-control" id="smallname" name="quote_name" placeholder="Name">
+              </div>
+
+                <div class="form-group ">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="smallEmail" name="quote_email" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                  <label for="Message">Message</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+
+
+
+            </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn primary-bottom" data-dismiss="modal" id="quote_submit">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

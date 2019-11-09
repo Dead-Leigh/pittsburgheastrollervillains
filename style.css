@@ -60,4 +60,15 @@ h1{
    color: white;
  }
 
- 
+ #go-btn{
+  background-color: transparent;
+  border-radius: 15px;
+  color: white;
+  border: none;
+
+ }
+
+#go-btn:hover{
+  color: #fbd904;
+  border: none;
+}

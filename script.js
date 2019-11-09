@@ -1,3 +1,47 @@
+
+//modle from franchise project
+$(document).ready(function() {
+
+  $('#go-btn').click(function(){
+    var zipcode = $('#zipcode').val();
+    $('#smallZip').val(zipcode);
+  });
+
+  $('#submit').click(function(){
+    console.log("submitted");
+  });
+
+  $("#quote_submit").click(function(e){
+
+    e.preventDefault();
+    // formSubmit(e.currentTarget.name);
+    formSubmit('smallForm');
+  });
+
+});
+// console.log("ready!") --
+
+
+
+function formSubmit(name) {
+  var serializedData = $(document.forms[name]).serializeObject();
+  var url = 'https://docs.google.com/spreadsheets/d/1x6h2EX1nyJl2byWhPMxGby75UWKRQpULZowMdlu3qvw/edit#gid=0'
+
+  var jqxhr = $.ajax({
+    url,
+    method: "GET",
+    dataType: "json",
+    data: serializedData,
+    success: function(data){
+      console.log('success', data);
+    }
+  });
+}
+
+
+
+
+
 //hero slide show
 
 var i = 0;
