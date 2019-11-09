@@ -1,11 +1,19 @@
+//hero slide show
+
 var i = 0;
 var images = [];
 var time = 3000;
 
 //image list
 images[0] = "img/bluestreaklogo.jpg";
-images[1] = "img/galslogo.jpg";
-images[2] = "img/bluestreaklogo.jpg";
+images[1] = "img/blue2019drumpster.jpg"
+images[2] = "img/wheeliejammer.jpg"
+images[3] = "img/galslogo.jpg";
+images[4] = "img/2019winning.jpg";
+images[5] = "img/gals2019.jpg";
+images[6] = "img/galsatcorry.jpg";
+images[7] = "img/galsrule2019.jpg";
+images[8] = "img/woncorry2018.jpg"
 
 
 // fun to change the image
@@ -21,19 +29,4 @@ function changeImg(){
 
 window.onload = changeImg;
 
-// showDivs(slideIndex);
-//
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
-//
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("slideshow");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length} ;
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex-1].style.display = "block";
-// }
+//end slideshow
